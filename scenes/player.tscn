@@ -1,9 +1,7 @@
 [gd_scene format=3 uid="uid://bexjw3ru8yta5"]
 
 [ext_resource type="Script" uid="uid://bsttsadwx2yhc" path="res://scenes/player.gd" id="1_4flbx"]
-
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_sh265"]
-size = Vector2(20, 120)
+[ext_resource type="Texture2D" uid="uid://b4k56k308wp50" path="res://assets/Paddle.png" id="2_g2els"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_4flbx"]
 size = Vector2(20, 120)
@@ -12,7 +10,7 @@ size = Vector2(20, 120)
 script = ExtResource("1_4flbx")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=86565521]
-texture = SubResource("PlaceholderTexture2D_sh265")
+texture = ExtResource("2_g2els")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=924748014]
 shape = SubResource("RectangleShape2D_4flbx")
