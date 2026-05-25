@@ -18,4 +18,7 @@ func _process(delta: float) -> void:
 			velocity *= 1.05
 			var hit_point = global_position.y - collider.global_position.y
 			velocity.y += hit_point * 5.0
-		
+
+func reset():
+	global_position = Vector2(576, 324)
+	velocity = Vector2(-base_speed, base_speed/2)
