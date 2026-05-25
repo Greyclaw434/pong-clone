@@ -19,8 +19,10 @@ func _physics_process(delta: float) -> void:
 	var direction = sign(ball.global_position.y - global_position.y)
 	
 	if distance > 10:
+		velocity.x = 0
 		velocity.y = direction * speed
 	else:
+		velocity.x = 0
 		velocity.y = 0
 		
 	move_and_slide()
