@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Pong Clone"
-run/main_scene="uid://bexjw3ru8yta5"
+run/main_scene="uid://bjiyvvyk576n2"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
@@ -41,3 +41,4 @@ move_down={
 [rendering]
 
 rendering_device/driver.windows="d3d12"
+environment/defaults/default_clear_color=Color(0, 0, 0, 1)
