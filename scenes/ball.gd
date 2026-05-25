@@ -12,3 +12,10 @@ func _process(delta: float) -> void:
 	if collision:
 		velocity = velocity.bounce(collision.get_normal())
 		
+		var collider = collision.get_collider()
+		
+		if collider.name == "Player" or collider.name == "Enemy":
+			velocity *= 1.05
+			var hit_point = global_position.y - collider.global_position.y
+			velocity.y += hit_point * 5.0
+		
